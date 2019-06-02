@@ -13,8 +13,8 @@ RecyclerView.Adapter<WorkoutListAdapter.WorkoutViewHolder>() {
 
     class WorkoutViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
         fun bind(workout: Workout, clickListener: (Workout) -> Unit) {
-            view.findViewById<TextView>(R.id.name_text_view).text = workout.name
-            view.findViewById<TextView>(R.id.desc_text_view).text = workout.description
+            view.findViewById<TextView>(R.id.name_edit_text).text = workout.name
+            view.findViewById<TextView>(R.id.desc_edit_text).text = workout.description
             view.setOnClickListener { clickListener(workout) }
         }
     }

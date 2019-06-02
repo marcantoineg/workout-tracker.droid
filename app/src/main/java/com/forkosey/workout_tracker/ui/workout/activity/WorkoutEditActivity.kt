@@ -16,8 +16,9 @@ class WorkoutEditActivity : AppCompatActivity() {
 
         workout = intent?.extras?.get("workout") as Workout?
 
-        findViewById<TextView>(R.id.id_text_view).text = workout?.id ?: "No data for now"
-        findViewById<TextView>(R.id.name_text_view).text = workout?.id ?: "No data for now"
-        findViewById<TextView>(R.id.desc_text_view).text = workout?.id ?: "No data for now"
+        title = workout?.name ?: "New Workout"
+        //findViewById<TextView>(R.id.id_edit_text).text = workout?.id ?: "No data for now"
+        findViewById<TextView>(R.id.name_edit_text).text = workout?.name ?: ""
+        findViewById<TextView>(R.id.desc_edit_text).text = workout?.description ?: ""
     }
 }

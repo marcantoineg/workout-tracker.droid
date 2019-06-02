@@ -8,22 +8,41 @@
     app:alignItems="stretch"
     app:alignContent="space_around">
 
-    <TextView
-        android:id="@+id/id_text_view"
+    <EditText
+        android:id="@+id/name_edit_text"
+        android:hint="@string/name_label"
+        android:inputType="text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center"/>
+        android:textAlignment="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
 
-    <TextView
-        android:id="@+id/name_text_view"
+    <EditText
+        android:id="@+id/desc_edit_text"
+        android:hint="@string/description_label"
+        android:inputType="textMultiLine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center"/>
+        android:textAlignment="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:maxLines="3"/>
 
-    <TextView
-        android:id="@+id/desc_text_view"
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:text="Exercise List Placeholder"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:enabled="false"/>
+
+    <Button
+        android:id="@+id/create_workout_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center"/>
+        android:text="@string/create_label"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
 
 </com.google.android.flexbox.FlexboxLayout>
